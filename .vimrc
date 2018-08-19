@@ -19,3 +19,6 @@ set expandtab
 
 " set automatic word wrapping to 79 to meet pep-8 requirement
 set textwidth=79
+
+" enable syntax highlighting
+syntax enable
