@@ -23,6 +23,12 @@ set textwidth=79
 " enable syntax highlighting
 syntax enable
 
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
 
 """""""""""""""""'
 " Vundle - extension manager for vim
@@ -40,6 +46,9 @@ Plugin 'gmarik/Vundle.vim'
 
 " Plugin that enables better pythojn indentation"
 Plugin 'vim-scripts/indentpython.vim'
+
+" Plugin for better folding
+Plugin 'tmhedberg/SimpylFold'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
