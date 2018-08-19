@@ -30,6 +30,13 @@ set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
 
+
+" split navigations - allows to move to othe file by ctrl + h, j, k, l
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 """""""""""""""""'
 " Vundle - extension manager for vim
 
