@@ -17,9 +17,6 @@ set shiftwidth=4
 " on pressing tab, insert 4 spaces
 set expandtab
 
-" set automatic word wrapping to 79 to meet pep-8 requirement
-set textwidth=79
-
 " enable syntax highlighting
 syntax enable
 
@@ -36,6 +33,14 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" File extenstion specific options
+
+" Python
+
+" set automatic word wrapping to 79 to meet pep-8 requirement
+au BufNewFile,BufRead *.py
+    \ set textwidth=79
 
 """""""""""""""""'
 " Vundle - extension manager for vim
