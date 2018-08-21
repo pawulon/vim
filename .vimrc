@@ -4,6 +4,9 @@ set number
 " turn on utf-8 encoding
 set encoding=utf-8
 
+" use windows clipboard
+set clipboard=unnamed
+
 " enable unix style end of line formatting
 set fileformat=unix
 
@@ -27,6 +30,9 @@ syntax enable
 set foldmethod=indent
 set foldlevel=99
 
+" set space key as a leader key
+let mapleader=" "
+
 " Enable folding with the spacebar
 nnoremap <space> za
 
@@ -36,6 +42,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" use typical backspace behavior
+set backspace=indent,eol,start
 
 " File extenstion specific options
 
@@ -65,6 +74,11 @@ Plugin 'vim-scripts/indentpython.vim'
 
 " Plugin for better folding
 Plugin 'tmhedberg/SimpylFold'
+
+" Plugin for auto-completion 
+Bundle 'Valloric/YouCompleteMe'
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
