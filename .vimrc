@@ -1,6 +1,9 @@
 " turn on line numbering
 set number
 
+" turn on utf-8 encoding
+set encoding=utf-8
+
 " enable unix style end of line formatting
 set fileformat=unix
 
@@ -41,6 +44,7 @@ nnoremap <C-H> <C-W><C-H>
 " set automatic word wrapping to 79 to meet pep-8 requirement
 au BufNewFile,BufRead *.py
     \ set textwidth=79
+
 
 """""""""""""""""'
 " Vundle - extension manager for vim
