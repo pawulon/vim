@@ -52,7 +52,7 @@ set backspace=indent,eol,start
 
 " set automatic word wrapping to 79 to meet pep-8 requirement
 au BufNewFile,BufRead *.py
-    \ set textwidth=79
+    \ set textwidth=120
 
 " Use the below highlight group when displaying bad whitespace is desired.
 highlight BadWhitespace ctermbg=red guibg=red
