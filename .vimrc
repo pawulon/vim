@@ -1,5 +1,5 @@
 " turn on line numbering
-set number
+set nu
 
 " turn on utf-8 encoding
 set encoding=utf-8
@@ -45,6 +45,11 @@ nnoremap <C-H> <C-W><C-H>
 
 " use typical backspace behavior
 set backspace=indent,eol,start
+
+set term=xterm
+set t_Co=256
+let &t_AB="\e[48;5;%dm"
+let &t_AF="\e[38;5;%dm"
 
 " File extenstion specific options
 
@@ -101,6 +106,12 @@ Plugin 'nvie/vim-flake8'
 
 let python_highlight_all=1
 syntax on
+
+Plugin 'jnurmine/Zenburn'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+
+colorscheme zenburn
